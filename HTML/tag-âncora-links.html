@@ -1,25 +1,69 @@
 <!--    Aplicação de Tags Âncora e manipulação de Links
-    - a ( com o atributo href, cria um hyperlink para páginas da web, documentos, emaisl, localizações na mesma páginas ou qualquer coisa que possa ser endereçado por URL)
-    - id (O atributo global id define um identificador único no documento inteiro. Seu propósito é ligar o elemento e o atributo identificado para scripting ou estilização pelo CSS)
-    - 
-
+    - a ( com o atributo href, cria um hyperlink para páginas da web, documentos, emaisl, localizações na mesma páginas ou qualquer coisa que possa ser endereçado por URL).
+    - id (O atributo global id define um identificador único no documento inteiro. Seu propósito é ligar o elemento e o atributo identificado para scripting ou estilização pelo CSS).
 -->
 
 <h1>HTML</h1>
 <p><pre>   HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação de Hipertexto" é uma linguagem de marcação utilizada 
 na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
-</pre><pre>   HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo. Um documento é visto como um conjunto de eventos concorrentes 
+   HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo. Um documento é visto como um conjunto de eventos concorrentes 
 dependentes de tempo (como áudio, vídeo, etc.), conectados por hiperligações (em inglês: hyperlink e link). O padrão é independente de outros padrões de processamento de texto em geral.
 </pre></p>
+<h2>Índice</h2>
 <ul>
-    <li><a href=""><strong>História</strong></a></li>
-    <li><a href=""><strong>Marcas(Tags)</strong></a></li>
-    <li><a href=""><strong>Estrutura básica de um documento</strong></a></li>
+    <li><a href="#history"><strong>História</strong></a></li>
+    <li><a href="#marks"><strong>Marcas(Tags)</strong></a></li>
+    <li><a href="#estrut"><strong>Estrutura básica de um documento</strong></a></li>
     <ol>
-        <li><a href=""><strong>Cabeçalho</strong></li>
-        <li><a href=""><strong>Corpo</strong></li>    
+        <li><a href="#header"><strong>Cabeçalho</strong></a></li>
+        <li><a href="#body"><strong>Corpo</strong></a></li>    
     </ol>
 </ul>
+
+<h2 id="history">História</h2>
+<p><pre>   Tim Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como o HTTP) em uma estação NeXTcube usando o ambiente de desenvolvimento
+NeXTSTEP. Na época a linguagem não era uma especificação, mas uma coleção de ferramentas para resolver um problema de Tim: a comunicação e disseminação das pesquisas entre ele 
+e seu grupo de colegas. Sua solução, combinada com a então emergente internet pública (que tornar-se-ia a Internet) ganhou atenção mundial.  
+   As primeiras versões do HTML foram definidas com regras sintáticas flexíveis, o que ajudou aqueles sem familiaridade com a publicação na Web. Através do tempo, a utilização de 
+ferramentas para autoria de HTML aumentou, assim como a tendência em tornar a sintaxe cada vez mais rígida. Apesar disso, por questões históricas (retrocompatibilidade), os 
+navegadores ainda hoje conseguem interpretar páginas web que estão longe de ser um código HTML válido.
+   A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas originais de Tim Berners-Lee em criar uma linguagem baseada em SGML para a Internet.
+A primeira publicação foi esboçada por Berners-Lee e Dan Connolly, e publicada em 1993 na IETF como uma aplicação formal para o SGML (com uma DTD em SGML definindo a gramática).
+A IETF criou um grupo de trabalho para o HTML no ano seguinte, e publicou o HTML 2.0 em 1995. Desde 1996, as especificações HTML vêm sendo mantidas, com o auxílio de fabricantes de
+software, pelo World Wide Web Consortium (W3C). Apesar disso, em 2000 a linguagem tornou-se também uma norma internacional (ISO/IEC 15445:2000). A recomendação HTML 4.01 foi publicada
+no final de 1999 pelo W3C. Uma errata ainda foi lançada em 2001.
+   Desde a publicação do HTML 3.5 no final de 1997, o grupo de trabalho da W3C tem cada vez mais — e de 2002 a 2006, de forma exclusiva — focado no desenvolvimento do XHTML, uma especificação
+HTML baseada em XML que é considerada pela W3C como um sucessor do HTML. O XHTML faz uso de uma sintaxe mais rigorosa e menos ambígua para tornar o HTML mais simples de ser processado e estendido.
+   Em janeiro de 2008 o W3C publicou a especificação do HTML5 como Working Draft. Apesar de sua sintaxe ser semelhante a de SGML, o HTML5 abandonou qualquer tentativa de ser uma aplicação SGML e, 
+definiu explicitamente sua própria serialização "html", além de uma alternativa baseada em XML, o XHTML5.
+</pre></p>
+
+<h2 id="marks">Marcas(Tags)</h2>
+<p><pre>   Todo documento HTML possui marcadores (do inglês: tags), palavras entre parênteses angulares (chevron) (&#60; e &gt;); esses marcadores são os comandos de formatação da linguagem. Um elemento
+é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa 
+mudança. 
+   Exemplo de um elemento simples (não possui filhos):
+<pre><code>     &lt;h /&gt; </code></pre>   Exemplo de um elemento composto (possui filhos):
+<pre><code>     &lt;a href="http://pt.wikipedia.org/"&gt;Wikipédia &lt;/a&gt; </code></pre>   Isso é necessário porque os marcadores servem para definir a formatação de uma porção do documento, e assim marcamos onde começa e termina o conteúdo que receberá a formatação ou marcação necessária,
+específica. Alguns elementos são chamados “vazios”, pois não marcam uma região de texto, apenas inserem algum elemento no documento.
+   Cada elemento tem os seus atributos possíveis e os seus valores. Um exemplo, é o atributo href que pode ser usado com o elemento a, com o link mas que não pode ser usado com o elemento meta. Isso quer
+dizer que devemos saber exatamente quais os atributos e valores possíveis para cada elemento.
+   De uma maneira geral o HTML é um poderoso recurso, sendo uma linguagem de marcação muito simples e acessível voltada para a produção e compartilhamento de documentos, imagens, vídeos e áudio via streaming. 
+Na sua versão mais recente, o HTML5, é possível criar marcadores personalizados com JavaScript, linguagem de programação diretamente compatível com o HTML. Cada tag pode ter uma função específica utilizando 
+uma API (Interface de programação de aplicações) diferente, assim como seus nomes e estilos. 
+</pre></p>
+
+<h2 id="estrut">Estrutura básica de um documento</h2>
+
+    <h3 id="header">Cabeçalho</h3>
+    <h3 id="body">Corpo</h3>
+
+
+
+
+
+
+
 
 
 
