@@ -1,0 +1,61 @@
+<!-- Conceito de Tabelas Complexas
+    Aplicando tags de tabelas complexas para criação de uma tabela que registra
+a produção de 2 lojas agrupados por nome.
+    <th rowspan=""> - atributo que define a quantidade de filas ocupadas de um texto numa tabela.
+    <colgroup> - elemento que agrupa as colunas de uma tabela para fins de organização e estilização.
+    <col> - elemento que configura e/ou estiliza a coluna de uma tabela, seguindo ordem crescente.
+    <col span=""> - atributo que define a quantidade de colunas a ser modificadas.
+    <col style=""> - atributo que estiliza a cor da coluna.
+-->
+
+<table>
+    <caption style="background-color:white;"><strong style="color:black;">Produção x Vendas</strong></caption>
+    
+    <colgroup>
+        <col style="background-color:white;">
+        <col span="2" style="background-color:#ff7a00;">
+        <col span="2" style="background-color:#000000;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" style="color:#000000;">Intershop</th>
+            <th colspan="2">Lajä Records</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th></th>
+            <th style="color:#000000;">Produção</th>
+            <th style="color:#000000;">Venda</th>
+            <th>Produção</th>
+            <th>Venda</th>
+        </tr>
+        <tr>
+            <th style="color:#000000;">Discos</th>
+            <th style="color:#000000;">20</th>
+            <th style="color:#000000;">18</th>
+            <th>768</th>
+            <th>666</th>
+        </tr>
+        <tr>
+            <th style="color:#000000;">Camisetas</th>
+            <th style="color:#000000;">78</th>
+            <th style="color:#000000;">67</th>
+            <th>350</th>
+            <th>348</th>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th style="color:#000000;">Total</th>
+            <th style="color:#000000;">98</th>
+            <th style="color:#000000;">85</th>
+            <th style="color:white;">1118</th>
+            <th style="color:white;">1014</th>
+        </tr>
+    </tfoot>
+</table>
