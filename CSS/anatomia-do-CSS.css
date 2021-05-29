@@ -1,0 +1,34 @@
+/* Anatomia de um documento CSS 
+        Qualquer documento em CSS trabalha estilizando um documento HTML, analogicamente poderiamos 
+    dizer que o HTML é a estrutura enquanto o CSS seria a estética. Então todo documento CSS irá trabalhar em cima dos elementos e atributos da estrutura HTML, definindo uma configuração geral para todos elementos selecionados. Esta organização é feita através dos Seletores.    
+    Os Seletores conectam um elemento HTML com o CSS. Abaixo temos os tipos mais importantes:
+    * - Seletor Global de Elementos
+    h1, h2, p, div, span, etc... ' - Seletor de Elemento ou Tipo
+    #portatil, #console, #pc, #mac, etc... - Seletor de ID
+    .plataforma, .jogo, .jogador - Seletor de Classe
+    a[title], a[href="https://www.google.com.br"], a[class~="logo"] - Seletor de Atributo
+*/
+
+h3 { /* Estilizando os atributos da tag Header 1*/
+    color: rgb(82, 27, 82); /* Define a cor de todos caracteres contidos dentro das tags h1 */
+    font-size: 60ch; /* Define o tamanho da fonte de todos carcteres contidos dentro das tags h1 */
+    background: yellow; /* Define a cor de fundo da tela contida nas tags h1 */
+}
+
+#title {
+
+}
+
+dt {
+    color: blue;
+    font-size: 30px;
+}
+  
+dd {
+    color: #e16b45;
+}
+
+
+
+
+
