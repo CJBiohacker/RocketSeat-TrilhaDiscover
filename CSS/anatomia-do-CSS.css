@@ -11,24 +11,25 @@
 
 h3 { /* Estilizando os atributos da tag Header 1*/
     color: rgb(82, 27, 82); /* Define a cor de todos caracteres contidos dentro das tags h1 */
-    font-size: 60ch; /* Define o tamanho da fonte de todos carcteres contidos dentro das tags h1 */
+    font-size: 60px; /* Define o tamanho da fonte de todos carcteres contidos dentro das tags h1 */
     background: yellow; /* Define a cor de fundo da tela contida nas tags h1 */
+    background-position: center;
 }
-
-#title {
-
+ 
+#titlearea {
+    width: 625px;
 }
-
+  
+.title-1 {
+    margin-left: 25%;
+}
+  
 dt {
     color: blue;
     font-size: 30px;
+    text-decoration: underline;
 }
   
 dd {
     color: #e16b45;
-}
-
-
-
-
-
+  }
