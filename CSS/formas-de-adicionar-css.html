@@ -1,14 +1,28 @@
 <!--    Métodos de Adicionar CSS em HTML
     Existem 4 métodos para adição de estilo CSS em um documento HTML.
     Sendo dois interno e os outros dois externos.
-    INTERNO
-        inline - Através do atributo 'style' dentro da tag escolida.
+    INTERNO - Descrito no próprio documento HTML
+        style inline - Através do atributo 'style' dentro da tag escolida. Ex.: <div style="color"></div>
         <style> - Tag dentro do documento html que irá conter toda formatação/estilização CSS.
-    EXTERNO
-        <link> - Tag dentro do documento html que vincula um arquivo externo CSS.É um elemento amplo serve pra vincular os ícones na aba da página, dentro outras funções.
-        @import - Declaração at-rule @ do CSS que importa um arquivo externo CSS.
+    EXTERNO - Descrito no documento CSS
+        <link> - Tag dentro do documento html que vincula um arquivo externo CSS.É um elemento amplo serve pra vincular os ícones na aba da página, dentro outras funções. *** A TAG MAIS USADA ***
+        @import - Declaração at-rule @ do CSS que importa um estilo externo. Pode ser tanto um arquivo quanto uma url.Também pode ser declarado dentro das tags <style>.
 -->
 
-<h1 style="color:darkblue; background-color:darkgoldenrod;">Título de Exemplo estlizado pelo método inline</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-css-método-link.css">
+    
+    <title>Adicionando CSS</title>
+</head>
+<body>
+    <h1 style="color:darkblue; background-color:darkgoldenrod;">Título de Exemplo estlizado pelo método inline</h1>
 
-<div id="1" class="init"> Este texto está estilizado por um documento externo CSS</div>
+    <div id="text">Este texto está estilizado por um documento externo CSS através da tag &lt;link&gt;.</div>
+
+</body>
+</html>
