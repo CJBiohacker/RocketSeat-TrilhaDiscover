@@ -1,0 +1,27 @@
+#RocketButton {
+    padding: 0.6rem;
+    background:#7d39d8;
+    border-radius: 5px;
+    border-color:#7d39d8;
+}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-effect {
+    text-align-last: center;
+    font-size: 14px;
+}
+strong {
+    color:white;
+}
+span {
+    color:springgreen;
+}
+.title-h1 {
+    color:#2F4F4F;
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}

@@ -9,27 +9,27 @@
     a[title], a[href="https://www.google.com.br"], a[class~="logo"] - Seletor de Atributo
 */
 
-h3 { /* Estilizando os atributos da tag Header 1*/
-    color: rgb(82, 27, 82); /* Define a cor de todos caracteres contidos dentro das tags h1 */
-    font-size: 60px; /* Define o tamanho da fonte de todos carcteres contidos dentro das tags h1 */
-    background: yellow; /* Define a cor de fundo da tela contida nas tags h1 */
+h3 {                                 /* Estilizando os atributos da tag Header 1*/
+    color: rgb(82, 27, 82);        /* Define a cor de todos caracteres contidos dentro das tags h1 */
+    font-size: 60px;                 /* Define o tamanho da fonte de todos carcteres contidos dentro das tags h1 */
+    background: yellow;            /* Define a cor de fundo da tela contida nas tags h1 */
     background-position: center;
 }
  
-#titlearea {
+#titlearea {                         /* Estilizando a classe titlearea que pertence ao elemento div */
     width: 625px;
 }
   
-.title-1 {
+.title-1 {                           /* Estilizando o id title-1 que pertence ao elemento div */
     margin-left: 25%;
 }
   
-dt {
+dt {                                 /* Estilizando todo conteúdo dentro das tags de elemetno dt */
     color: blue;
     font-size: 30px;
     text-decoration: underline;
 }
   
-dd {
+dd {                                 /* Estilizando todo conteúdo dentro das tags de elemetno dd */
     color: #e16b45;
   }
