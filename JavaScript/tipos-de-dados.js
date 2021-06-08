@@ -1,11 +1,10 @@
-/* Tipos de Dados no Javascript */
-/*  String - São cadeia de caracteres. Respeitando a sintaxe do javascript,
-temos que inseri-la entre aspas simples ou duplas, ou entre template strings ou literals(acento grave).
-
-'' - Aspas simples
-"" - Aspas duplas
-`` - Templates strings ou literals (acento grave)
-
+/*  Tipos de Dados no Javascript - São dividos em tipos PRIMITIVOS e ESTRUTURAIS.  */
+/*
+  PRIMITIVOS
+  String - São cadeia de caracteres. Respeitando a sintaxe do javascript,temos que inseri-la entre aspas simples ou duplas, ou entre template strings ou literals(acento grave).
+    '' - Aspas simples
+    "" - Aspas duplas
+    `` - Templates strings ou literals (acento grave)
 */
 console.log("CJ MERN Full Stack Dev"); // Aplicando aspas duplas na inserção de string
 console.log('CJ Java Back End Dev');   // Aplicando aspas simples na inserção de strings
@@ -57,11 +56,23 @@ console.log(undefined == null); // Comparação se 'undefined' é igualmente amp
 console.log(null === undefined); // Comparação se 'null' é igualmente estrito à 'undefined'. (false)
 console.log(undefined === null); // Comparação se 'undefined' é igualmente estrito à 'null'. (false)
 
+/* ESTRUTURAIS
+    Object - É um tipo de dado usado para armazenar várias coleções chaves ou entidades mais complexas. É constituído de PROPRIEDADE/ATRIBUTO e FUNCIONALIDADE/MÉTODO.
+      SINTAXE
+        {PRORIEDADE: "VALOR"};
+*/
 
+console.log({
+  name:"Carlos Junior",
+  idade: 36,
+  andar: function() {
+    console.log("Andando");
+  }
+})
 
+/* Array (Vetor) - São conjuntos de dados agrupados que possuem elementos e índice. 
+    SINTAXE
+      ["string", number, etc];
+*/
 
-
-
-
-
-
+console.log(["Gerat", "Triss" , 99])
