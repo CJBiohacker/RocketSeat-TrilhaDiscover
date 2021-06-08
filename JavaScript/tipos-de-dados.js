@@ -36,4 +36,32 @@ console.log(Number(`número`)); // Imprime no console a string número, que é u
 console.log(Number(Infinity)); // Imprime no console a informação de número Infinito.
 console.log(Number(1.8*10**308)); // Imprime no console a informação de um número considerado como Infinito.
 
+/* Boolean - Representa duas condições contrárias de um dado/variável.
+        True - Condição de Verdadeiro (equivalente ao 1 em binário).
+        False - Condição de Falso (equivalente ao 0 em binário).
+*/
+
+console.log(true);
+console.log(false);
+
+/* Undefined - Não representa qualquer definição ou valor atrbuído há um dado ou variável.
+   Null - Representa um valor nulo, que não possui algum valor dentro.
+  Apesar de terem conceitos parecidos, um valor nulo não é a mesma coisa que um valor indefinido.
+Tudo depende do operador utilizado na comparação.
+*/
+
+console.log(undefined);
+console.log(null);
+console.log(null == undefined); // Comparação se 'null' é igualmente amplo à 'undefined'. (true)
+console.log(undefined == null); // Comparação se 'undefined' é igualmente amplo à 'null'. (true)
+console.log(null === undefined); // Comparação se 'null' é igualmente estrito à 'undefined'. (false)
+console.log(undefined === null); // Comparação se 'undefined' é igualmente estrito à 'null'. (false)
+
+
+
+
+
+
+
+
 
