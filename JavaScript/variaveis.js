@@ -63,7 +63,7 @@ console.log("O valor de x é: " + x);
 
 //  Scope let e const
 
-let y = 17      // Declara com palavra-chave let a variável y com valor 17
+let y = 17      // Declara com a palavra-chave let a variável y com valor 17
     console.log("Qual valor de y? " + y);   
     {       
         let y = 18;
