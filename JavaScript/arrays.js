@@ -20,14 +20,19 @@ console.log(`Criatura 0 = ${bestiary[0]}`); // Retorna o elemento especificado p
 // No JavaScript é possível adicionar 'Objetos' como elementos dentro de um Vetor (Array), inclusive junto de elementos simples (o que não é recomendado por razão de Boas Práticas). Para isso é só aplicar a sintaxe padrão de criação de objetos dentro do Vetor.
 
 const journal = [
-    {   nome:"Ken", idade:56, nasc:"EUA"    },
-    {   nome:"M.Bison", idade:70, nasc:"Tailândia"  },
-    {   nome:"Akuma", idade:undefined, nasc:"Japão"    },
-    {   nome:"Chun-Li", idade:53, nasc:"China"    },
-    {   nome:"Rainbow Mika", idade:42, nasc:"Japão"    },
-    {   nome:"Cammy White", idade:47, nasc:"Reino Unido"    },
+    { nome: "Ken", idade: 56, nasc: "EUA" },
+    { nome: "M.Bison", idade: 70, nasc: "Tailândia" },
+    { nome: "Akuma", idade: undefined, nasc: "Japão" },
+    { nome: "Chun-Li", idade: 53, nasc: "China" },
+    { nome: "Rainbow Mika", idade: 42, nasc: "Japão" },
+    { nome: "Cammy White", idade: 47, nasc: "Reino Unido" },
 ]
 
-console.log(`Número de Lutadores: ${journal.length}`);
-console.log(`Ficha Técnica Lutadora ${journal[3].nome}
-Idade: ${journal[3].idade} Nacionalidade: ${journal[3].nasc}`);
+console.log(`Número de Lutadores: ${journal.length}`);  // Imprime no console a extensão (quantidade de índices/posições) do Vetor (Array)
+console.log(`Ficha Técnica 
+Lutadora: ${journal[3].nome}
+Idade: ${journal[3].idade}
+Nacionalidade: ${journal[3].nasc}`); // Imprime no console 2 atributos do objeto contido dentro do Vetor
+
+
+
