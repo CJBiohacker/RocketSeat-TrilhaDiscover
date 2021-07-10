@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "name": "http:///home/carlos/Projetos/MERN_RocketSeat/JavaScript/exercícios-arrays.js",
+      "request": "launch",
+      "url": "http:///home/carlos/Projetos/MERN_RocketSeat/JavaScript/exercícios-arrays.js"
+    }
+  ]
+}
